@@ -1,0 +1,180 @@
+1. Explain the difference between frontend, backend, and full-stack development with suitable real-world examples.
+
+         Frontent development:--
+         Frontend development is the part of web development that users interact with directly. It focuses on designing the user interface (UI) using HTML,             
+         CSS and javascript.
+         Real-world Example:
+         On Amazon, the product images, search bar, and "Add to Cart" button are part of the frontend.
+
+         Backend Development:--
+         Backend development is responsible for the server-side logic. It processes user requests, stores data, and communicates with databases.
+         Real-world Example:
+         When you log into Amazon, the backend verifies your username and password and retrieves your account information.
+
+         Full-Stack Development:--
+         A full-stack developer works on both the frontend and backend.
+         Real-world Example:
+         A developer creating a complete online shopping website, including the user interface, login system, payment processing, and database.
+
+
+
+
+2. Create a simple diagram showing how the client-server model works in web architecture.
+
+
+     Client                                       Web Server                                             Database                              -----> Web 
+ (Web Browser)   ---->   HTTP Request  ---->     (Apache/Nginx)   ---->   Processes Request  ----->    (MySQL/MongoDB)   <----- Data Returned         Server
+
+                                                                                                                                                        |
+                                                                                                                                                        |
+                                                                                                                                                      HTTP 
+                                                                                                        Client              < -----                Response    
+
+
+
+3. Describe how a browser requests and displays a web page from a web server.
+          Steps:
+          (1)User enters a website URL.
+          (2)Browser finds the server's IP address using DNS.
+          (3)Browser sends an HTTP/HTTPS request.
+          (4)The web server receives the request.
+          (5)If needed, the server accesses the database.
+          (6)The server prepares HTML, CSS, JavaScript, and other files.
+          (7)The server sends the response back.
+
+
+4. Identify and list the tools required to set up a web development environment. Explain the purpose of each.
+Tool	                 Purpose
+Visual Studio Code	Source code editor
+Google Chrome	        Testing and debugging websites
+Node.js	                JavaScript runtime
+npm	                Package manager
+Git	                Version control
+GitHub	                Online repository hosting
+Live Server Extension	Automatically refreshes web pages during development
+Terminal/Command Prompt	Executes commands 
+
+
+5. Explain what a web server is and give examples of commonly used servers.
+
+A web server is software that receives requests from users and delivers web pages and other resources over the Internet.
+Examples:
+Apache HTTP Server
+Nginx
+Microsoft IIS
+LiteSpeed
+Node.js (using Express)
+
+
+
+6. Define the roles of a frontend developer, backend developer, and database administrator in a project.
+
+Frontend Developer
+Designs the user interface.
+Creates responsive webpages.
+Uses HTML, CSS, JavaScript.
+
+Backend Developer
+Develops server-side logic.
+Connects databases.
+Creates APIs.
+Handles authentication.
+
+Database Administrator (DBA)
+Designs databases.
+Stores and manages data.
+Performs backups.
+Ensures data security and optimization.
+
+
+
+7. Install VS Code and configure it for HTML, CSS, and JavaScript development. Take a screenshot of the setup.
+Steps:
+Download and install Visual Studio Code.
+Install the following extensions:
+Live Server
+Prettier
+HTML CSS Support
+JavaScript (ES6) Snippets
+Create a project folder.
+
+
+
+8. Explain the difference between static and dynamic websites. Provide an example of each.
+
+Static Website	Dynamic Website
+Same content for every visitor	Content changes based on user or database
+Faster	Slightly slower
+No database	Uses databases
+Easy to host	More complex
+Static Website Example
+
+A personal portfolio website.
+Dynamic Website Example
+Amazon, Facebook, Instagram, YouTube
+
+
+
+9. Research and list five web browsers. Explain how rendering engines differ between them.
+
+Browser	Rendering Engine
+Google Chrome	Blink
+Microsoft Edge	Blink
+Mozilla Firefox	Gecko
+Apple Safari	WebKit
+Opera	Blink
+Rendering Engines
+
+A rendering engine converts HTML, CSS, and JavaScript into the webpage displayed on the screen.
+Blink: Used by Chrome, Edge, and Opera. Fast and widely supported.
+Gecko: Used by Firefox. Independent engine with strong standards compliance.
+WebKit: Used by Safari. Optimized for Apple devices.
+
+
+
+10. Draw a labelled diagram showing the basic web architecture flow — client, server, database, and APIs.
+                User
+                  |
+                  v
+        +----------------+
+        | Client Browser |
+        +----------------+
+                  |
+            HTTP Request
+                  |
+                  v
+        +----------------+
+        |  Web Server    |
+        +----------------+
+          |          |
+          |          |
+          | API Call |
+          |          v
+          |    +------------+
+          |    | External   |
+          |    | APIs       |
+          |    +------------+
+          |
+          v
+    +----------------+
+    |   Database     |
+    | MySQL/MongoDB  |
+    +----------------+
+          |
+          v
+    Returns Data
+          |
+          v
+    +----------------+
+    |  Web Server    |
+    +----------------+
+          |
+     HTTP Response
+          |
+          v
+    +----------------+
+    | Client Browser |
+    +----------------+
+
+
+
