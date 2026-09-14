@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Registration Form</title>
+
+    <style>
+        .heading {
+            text-align: center;
+            color:beige;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background-color: gray;
+
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+
+            min-height: 100vh;
+            margin: 0;
+        }
+
+        form {
+            background-color: white;
+            width: 450px;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+        }
+
+        label {
+            font-size: 18px;
+        }
+
+        input[type="text"],
+        input[type="email"],
+        input[type="date"],
+        input[type="file"],
+        select {
+            margin: 8px 0;
+        }
+
+        input[type="text"],
+        input[type="email"],
+        input[type="date"],
+        select {
+            padding: 8px;
+            border: 1px solid #0000FF;
+            border-radius: 5px;
+            font-size: 15px;
+        }
+
+        input[type="text"],
+        input[type="email"] {
+            width: 250px;
+        }
+
+        input[type="date"] {
+            width: 150px;
+        }
+
+        select {
+            width: 100px;
+        }
+
+        input[type="radio"],
+        input[type="checkbox"] {
+            margin: 10px 5px 10px 8px;
+        }
+
+        .section {
+            margin-top: 10px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="heading">
+        <h1>Student Registration Form</h1>
+    </div>
+
+    <form action="/register" method="post">
+
+        <label for="fullName">Name:</label>
+        <input type="text" id="fullName" name="fullName" placeholder="Enter">
+        <br>
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" placeholder="Enter">
+        <br>
+
+        <label>Gender:</label>
+        <br>
+
+        <input type="radio" value="male" id="male" name="gender">
+        <label for="male">Male</label>
+
+        <input type="radio" value="female" id="female" name="gender">
+        <label for="female">Female</label>
+
+        <br>
+
+        <label for="date">Date:</label>
+        <input type="date" id="date">
+        <br>
+
+        <label for="file">Upload File:</label>
+        <input type="file" id="file">
+        <br>
+
+        <label for="branch">Branch:</label>
+        <select name="branch" id="branch">
+            <option value="cse">CSE</option>
+            <option value="it">IT</option>
+            <option value="ece">ECE</option>
+        </select>
+
+        <br>
+
+        <label>Select Skills:</label>
+        <br>
+
+        <input type="checkbox" id="java">
+        <label for="java">Java</label>
+
+        <input type="checkbox" id="python">
+        <label for="python">Python</label>
+
+    </form>
+
+</body>
+
+</html>

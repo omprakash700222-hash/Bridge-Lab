@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard Wireframe</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        .container {
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+            background-color: white;
+        }
+
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+
+            background-color: red;
+            height: 80px;
+            padding: 0 15px;
+            gap: 15px;
+        }
+
+        .card-container {
+            display: flex;
+            gap: 20px;
+        }
+
+        .box1,
+        .box2,
+        .box3 {
+            height: 40px;
+            width: 60px;
+            background-color: white;
+            border-radius: 8px;
+        }
+
+        .search-bar {
+            height: 40px;
+            width: 200px;
+            background-color: white;
+            border-radius: 20px;
+        }
+
+        .circle1,
+        .circle2 {
+            height: 60px;
+            width: 60px;
+            background-color: white;
+            border-radius: 50%;
+            margin-top: 5px;
+        }
+
+        .main-content {
+            padding: 20px;
+        }
+
+        .cards-container {
+            display: flex;
+            justify-content: left;
+            gap: 20px;
+            width: 100%;
+        }
+
+        .card1 {
+            
+            height: 240px;
+            width: 150px;
+            background-color: black;
+            border-radius: 12px;
+        }
+        .card2 {
+            
+            height: 240px;
+            width: 150px;
+            background-color: black;
+            border-radius: 12px;
+        }
+        .card3 {
+            
+            height: 240px;
+            width: 150px;
+            background-color: black;
+            border-radius: 12px;
+        }
+
+        .data-container {
+            display: flex;
+            justify-content:center;
+            gap: 20px;
+        }
+
+        .sidebar {
+            display: none;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="container">
+
+        <!-- Header Row -->
+        <header>
+
+            <div class="circle1"></div>
+
+            <div class="card-container">
+                <div class="box1"></div>
+                <div class="box2"></div>
+                <div class="box3"></div>
+            </div>
+
+            <div class="search-bar"></div>
+
+            <div class="circle2"></div>
+
+        </header>
+
+        <div class="data-container">
+
+            <aside class="sidebar">
+            </aside>
+
+            <div class="cards-container">
+                <div class="card1"></div>
+                <div class="card2"></div>
+                <div class="card3"></div>
+            </div>
+        </div>
+
+    </div>
+
+</body>
+</html>

@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        .navbar{
+            display:flex;
+            align-items: center;
+            justify-content: space-between;
+        
+            padding: 30px 100px;
+            background-color: #C2EFD4;
+        }
+        .logo{
+            font-size: 32px;
+            font-weight:bold;
+            color: #1f5135;
+        }
+        .nav-links{
+            display: flex;
+            gap: 40px;
+        }
+        .nav-links a{
+            text-decoration: none;
+            color: #1f5135;
+            font-size: 17px;
+            font-weight: bolder;
+        }
+        .nav-right{
+            display: flex;
+            align-items: center;
+            gap: 30px;
+        }
+        .nav-right button{
+            width: 80px;
+            height: 40px;
+            background-color: #C2EFD4;
+        }
+        .heading h1 {
+            margin-left:50px;
+            margin-top: 30px;
+            font-size: 70px;
+            color: #1f5135;
+        }
+        .heading p{
+            margin-left: 50px;
+            margin-top: 50px;
+            font-size: 20px;
+            width: 400px;
+            color: #1f5135 ;
+            font-weight: bolder;
+            line-height: 1.8;
+        }
+        .hero {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background-color: #C2EFD4;
+            padding: 50px 100px;
+            
+            .image img{
+                width:350px;
+                border-radius: 80px 30px 80px 30px;
+            }
+        }
+        .explore{
+            margin-top: 30px;
+        }
+        .explore button{
+            margin-left: 50px;
+            width: 190px;
+            height: 60px;
+            background-color: #1f5135;
+            color: white;
+
+        }
+       .selling{
+            display: flex;
+            /* justify-content: center; */
+            align-items:center;
+            flex-direction: column;
+            gap:40px;
+            padding:50px 60px;
+            margin-top:20px;
+        }
+        .selling-text{
+            width: auto;
+            color:#1f5135;
+        }
+        .selling-text h1{
+            text-align: center;
+            font-size:35px;
+            line-height: 1.2;
+            margin-bottom: 20px;
+        }
+        .selling-text p{
+            font-size:18px;
+            font-weight:bold;
+            margin-top:20px;
+            line-height: 1.5;
+        }
+        .product{
+            display:flex;
+            gap: 30px;
+        }
+        .product1 img{
+             width:300px;
+             height:300px;
+            object-fit:cover;
+        }
+        .product1 p{
+            font-size: 20px;
+            font-weight: bolder;
+            color: #1f5135;
+        }
+        .product1 span{
+            color: #1f5135;
+            font-size: 18px;
+        }
+        .see-all{
+            margin-top: 20px;
+        }
+        .see-all{
+            margin-left: 10px;
+            width: 120px;
+            height: 30px;
+            font-weight: bolder;
+            background-color: #1f5135;
+            color: white;
+        }
+
+    </style>
+</head>
+<body>
+    <nav class ="navbar">
+        <div class="logo">
+            Rivo
+        </div>
+        <div class="nav-links">
+            <a href ="#">HOME</a>
+            <a href="#">SHOP</a>
+            <a href="https://chatgpt.com/">FEARTURES</a>
+            <a href="http://127.0.0.1:5500/googleform1.html">CONTACT</a>
+        </div>
+        <div class="nav-right">
+            <span>🛍️</span>
+            <button>LOGIN</button>
+        </div>
+
+    </nav>
+    <div class="hero">
+        <div class="heading">
+        <h1>
+            Discover and<br>
+            Find your own<br>
+            Fashion!
+        </h1>
+        <p>
+            Explore our curated collection of stylish<br>
+            clothing and accessories tailored to your<br>
+            unique taste.
+        </p>
+        <div class="explore">
+            <button>EXPLORE NOW</button>
+        </div>
+        </div>
+        <div class="image">
+            <img src="image/pexels-ivan-s-7621358.jpg" alt="Fashion Model">
+
+        </div>
+    </div>  
+
+   <div class="selling">
+        <div class="selling-text">
+          <h1>Best selling</h1>
+          <p>
+            Get in on the trend with our curated 
+            selection of best-selling style
+          </p>
+        </div>
+        <div class="product">
+            <div class="product1">
+                <img src="image\27707-ebay-881309_1920 (1).jpg">
+                <p>For sale</p>
+                <span>$40 | 4.0⭐</span>
+            </div>
+
+            <div class="product1">
+                <img src="image\pexels-karola-g-5632379.jpg">
+                <p>For sale</p>
+                <span>$20 | 3.5⭐</span>
+            </div>
+
+            <div class="product1">
+                <img src="image\pexels-shkrabaanthony-6207729.jpg">
+                <p>For sale</p>
+                <span>$30 | 4.5⭐</span>
+            </div>
+            <div class="see-all">
+                <button>See all </button>
+            </div>
+        </div>
+    </div>
+
+</div>
+</body>
+</html>
